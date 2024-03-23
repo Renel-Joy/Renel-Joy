@@ -1,0 +1,54 @@
+/* Admin Panel Styles */
+
+.admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.admin-header {
+    background: linear-gradient(to right, #41C9E2, #ACE2E1, #F7EEDD);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.admin-nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+.admin-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.admin-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.admin-nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.admin-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.admin-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}

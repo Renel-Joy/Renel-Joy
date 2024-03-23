@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-LCsRk3RZR0vvoR8uJ2e4wP80V3X1cGZdqBL5M3UofWdhv9fLzL1G9BplDO+cqnWm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-LCsRk3RZR0vvoR8uJ2e4wP80V3X1cGZdqBL5M3UofWdhv9fLzL1G9BplDO+cqnWm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projets">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+      <p>Hi! I'm Renel Joy</p>
+      <h1>A Bachelor of Science in Information Technology</h1>
+    </div>
+  </div>
+</div> 
+<!-- ---------about--------- -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="image/background.jpg" alt="">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <P> Taking Bchelor of Science in Information Technology, Student of Western Mindanao State University. 
+          I am a shy but curious individual, always eager to learn new things one at a time. 
+          I have a habit of asking questions when I encounter something unfamiliar, as I believe that's how I expand my knowledge. 
+          Observing my surroundings is something I do naturally, as there's always something intriguing to discover. Despite my shyness, 
+          I'm open to learning and growing, and I approach life with a willingness to explore and understand.</P>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Graphic Designing</span><br>Designing Logo</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span></span></li>
+              <li><span></span></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2016-2017</span><br>High School Graduate<br>Ayala National High School</li>
+              <li><span>2018-2019</span><br>Senior High Graduate<br>Ayala National High School</li>
+              <li><span>Present</span><br>College<br>Western Mindanao State University</li>
+
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- --------project-------- -->
+<div id="project">
+  <div class="container-proj">
+    <h1 class="sub-title">My Projects</h1>
+    <div class="project-list">
+      <div class="work">
+        <img src="image/application.jpg" alt="">
+        <div class="layer">
+          <h3>FinQuant Application</h3>
+          <p>The App is use to Count Fish in an Aquarium</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+      <div class="work">  
+        <img src="image/web app1.png" alt="">
+        <div class="layer">
+          <h3>Ree Cooling</h3>
+          <p>A Web App Use to reserve a appliances services</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+<!-- ---------contact--------- -->
+<div id="contact">
+  <div class="container">
+    <h1 class="sub-title">Contact Me</h1>
+    <p>Feel free to reach out to me through the following channels:</p>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:reneljoyladao@gmail.com">reneljoyladao@gmail.com</a></p>
+      <p>Phone: <a href="tel:+639169754667">09169754667</a></p>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+</body>
+</html>
